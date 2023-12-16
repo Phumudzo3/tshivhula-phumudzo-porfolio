@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Sulphur+Point:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  text-decoration: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+html,
+body {
+  background: #f3f3f3;
+  font-family: "Dongle", sans-serif;
+  font-family: "Sulphur Point", sans-serif;
+  scroll-snap-type: y mandatory;
+  display: block;
+  overflow-x: hidden;
+}
+.image-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
+  height: 100vh;
+  min-width: 100%;
+
+  flex: 0 0 auto;
+}
+.navbar a {
+  color: black;
+}
+#myBtn {
+ display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.header {
+  height: 100vh;
+}
+.nav {
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav span {
+  margin-left: 10px;
+}
+.title_portfolio {
+  font-weight: 900;
+  color: black;
+}
+.navbar {
+  margin-right: 30px;
+  font-size: 16px;
+}
+.banner_wrap {
+  height: 92vh;
+}
+.headline {
+  display: flex;
+  align-items: center;
+  width: 90vw;
+justify-content: center;
+  position: relative;
+  top: 160px;
+}
+
+
+.banner_wrap .profile_pic img {
+  border-radius: 50%;
+}
+.intro,
+.social_link {
+  width: 50vw;
+  margin-left: 20px;
+}
+.social_link {
+  margin-top: 10px;
+}
+.headline_title {
+  font-size: 70px;
+}
+.intro {
+  font-size: 16px;
+}
+.title,
+.subject {
+  margin-bottom: 40px;
+}
+.title_title {
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+.sct1 {
+  height: 300vh;
+  background: #8ea69b;
+  border-radius: 10px;
+}
+.projects_list {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-around;
+  position: relative;
+  top: 80px;
+}
+.projects {
+  position: relative;
+  top: 80px;
+  border-radius: 10px;
+  width: 450px;
+  height: 450px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  margin: 25px;
+  padding: 20px;
+}
+.project_01 {
+  margin-left: 5px;
+}
+description p {
+  padding-top: 5px;
+}
+.links {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.sct2 {
+  margin: 5px;
+  height: 100vh;
+  background: #8ea69b;
+  border-radius: 10px;
+}
+.resume_link a {
+  color: black;
+}
+.resume_link {
+  width: 40vw;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  top: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+.sct3 {
+  margin: 5px;
+  height: 90vh;
+  background: #8ea69b;
+  border-radius: 10px;
+}
+.contact_list {
+  width: 60vw;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  top: 40vh;
+  display: flex;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 10px;
+
+  justify-content: center;
+}
+
+.phone_number,
+.email,
+.linked {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  justify-content: center;
+}
+.footer {
+  width: 100%;
+  background: #8ea69b;
+  border-radius: 10px;
+  margin: auto;
+  height: 80px;
+}
+.footer_note {
+  border-radius: 10px;
+  width: 60vw;
+  height: 8vh;
+  margin: auto;
+  display: flex;
+}
+.social_link_2 {
+  margin: auto;
+  text-align: center;
+}
+.follow_me {
+  position: relative;
+  left: 6px;
+}
+/*screen with max width of 480px(mobile device)*/
+@media (max-width: 1160px) {
+
+.headline {
+ flex-direction: column;
+  align-items: center;
+ justify-items: center;
+
+height: 130vh;
+
+  }
+.title,.headline_title,.social_link,.myskills{
+text-align: center;
+}
+  
+  .banner_wrap {
+    height: 160vh;
+   
+    display: flex;
+    justify-content: center;
+  }
+  
+.sct1 {
+  height: 840vh;
+ 
+}
+}
+@media screen and (max-width:808px) {
+.nav{
+  display: block;
+  text-align: center;
+}
+.navbar{
+  margin-left: 30px;
+}
+  .headline {
+    flex-direction: column;
+     align-items: center;
+    justify-items: center;
+  
+   height: 170vh;
+   
+     }
+   .title,.headline_title,.social_link,.myskills{
+   text-align: center;
+   }
+   .headline_title{
+    font-size: 30px;
+   }
+     
+     .banner_wrap {
+       height: 193vh;
+       position: relative;
+       bottom: 60px;
+       display: flex;
+       justify-content: center;
+     }
+     
+   .sct1 {
+     height: 840vh;
+    
+   }
+
+.resume_link a{
+  display: block;
+  text-align: center;
+}
+.contact_list{
+  display: block;
+  text-align: center;
+ 
+}
+.email{
+  margin-right: 60px;
+}
+
+.phone_number{
+  margin-top: 30px;
+  margin-right: 60px;
+}
+.social_link_2 p{
+  font-size: 14px;
+}
+
+}
